@@ -1,6 +1,7 @@
 <script>
-  export let rating = null;
 
+  export let rating = null;
+  
   let ratingOnHover = 0;
 
   function handleMouseEnter(n) {
