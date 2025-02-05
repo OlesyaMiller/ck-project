@@ -2,7 +2,7 @@
 
   export let rating = null;
   
-  let ratingOnHover = 0;
+  export let ratingOnHover = 0;
 
   function handleMouseEnter(n) {
     if (rating === null) {
@@ -30,12 +30,13 @@
 </script>
 
 
-<div class="flex" on:mouseleave={handleMouseLeave}>
+<div class="flex">
   {#each [1, 2, 3, 4, 5] as star}
     <span
+      on:mouseleave={handleMouseLeave}
       on:mouseenter={() => handleMouseEnter(star)}
       on:click={() => handleClick(star)}
-      class="cursor-pointer text-3xl select-none {getStarClass(star)}">
+      class="star cursor-pointer text-3xl select-none {getStarClass(star)}">
       ★
     </span>
   {/each}
