@@ -15,7 +15,7 @@
     <Rating bind:rating={ratingItem1} />
 
     {#if ratingItem1 !== null}
-      <p class="mt-2">Item 1: {ratingItem1} star{ratingItem1 > 1 ? 's' : ''}</p>
+      <p class="mt-2">{ratingItem1} star{ratingItem1 > 1 ? 's' : ''}</p>
     {:else}
       <p class="mt-2 text-gray-600">No rating</p>
     {/if}
@@ -29,7 +29,7 @@
     <Rating bind:rating={ratingItem2} />
 
     {#if ratingItem2 !== null}
-      <p class="mt-2">Item 2: {ratingItem2} star{ratingItem2 > 1 ? 's' : ''}</p>
+      <p class="mt-2">{ratingItem2} star{ratingItem2 > 1 ? 's' : ''}</p>
     {:else}
       <p class="mt-2 text-gray-600">No rating</p>
     {/if}
@@ -43,7 +43,7 @@
     <Rating bind:rating={ratingItem3} />
 
     {#if ratingItem3 !== null}
-      <p class="mt-2">Item 3: {ratingItem3} star{ratingItem3 > 1 ? 's' : ''}</p>
+      <p class="mt-2">{ratingItem3} star{ratingItem3 > 1 ? 's' : ''}</p>
     {:else}
       <p class="mt-2 text-gray-600">No rating</p>
     {/if}
