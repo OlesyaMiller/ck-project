@@ -23,7 +23,7 @@
   }
 
   function getStarClass(n) {
-    return i <= (rating !== null ? rating : ratingOnHover)
+    return n <= (rating !== null ? rating : ratingOnHover)
       ? 'text-yellow-500'  
       : 'text-gray-400';   
   }
